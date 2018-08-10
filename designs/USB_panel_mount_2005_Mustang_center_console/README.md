@@ -12,7 +12,7 @@ A replacement for factory "blank" cover mount in center console storage compartm
 
 ## Reference
 
-  - [USB cable]() bought on Amazon
+  - [USB mount cable](https://www.amazon.com/gp/product/B0773GKM2C/) bought on Amazon "LDKCOK USB 3.0 Mount Cable –USB Extension Flush, Dash, Panel Mount Cable, for Car, Boat, Motorcycle and More (6ft/2m)"
   - Ford part number that is substitute for: []()
 
 ## Files
@@ -28,9 +28,10 @@ Design progression
 
 ![Protoyping iterations](design_progression_1.jpeg)
 
+![Final print](final_print.jpeg)
+
 ![Side by side, replacement and original](side_by_side.jpeg)
 
-![With cable in car](cable_inserted.jpeg)
 
 ## Methodology
 
@@ -41,8 +42,7 @@ I modeled the replacement part in Autodesk Fusion 360.
   - For iterative prototyping, printed in PLA on Lulzbot Mini (at "fast" setting)
   - For final print, printed in ABS on Lulzbot Mini (no rescaling, at "detailed" setting)
 
-![Final print](final_print.jpeg)
-
+![With cable in car](cable_inserted.jpeg)
 
 ## Thingiverse
 
