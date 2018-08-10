@@ -3,7 +3,7 @@
 
 A replacement for factory "blank" cover mount in center console storage compartment in a 2005 Ford Mustang. It was created to hold USB socket for a new car stereo install.
 
-![Installed in car](installed_in_car.png)
+![Installed in car](installed_in_car.jpeg)
 
 
 # TODO
@@ -26,9 +26,11 @@ A replacement for factory "blank" cover mount in center console storage compartm
 
 Design progression
 
-![Protoyping iterations](design_progression_1.png)
+![Protoyping iterations](design_progression_1.jpeg)
 
-![Side by side, replacement and original](side_by_side.png)
+![Side by side, replacement and original](side_by_side.jpeg)
+
+![With cable in car](cable_inserted.jpeg)
 
 ## Methodology
 
@@ -39,7 +41,7 @@ I modeled the replacement part in Autodesk Fusion 360.
   - For iterative prototyping, printed in PLA on Lulzbot Mini (at "fast" setting)
   - For final print, printed in ABS on Lulzbot Mini (no rescaling, at "detailed" setting)
 
-![Final print](final_print.png)
+![Final print](final_print.jpeg)
 
 
 ## Thingiverse
