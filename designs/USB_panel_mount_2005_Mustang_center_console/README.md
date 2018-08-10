@@ -12,8 +12,8 @@ A replacement for factory "blank" cover mount in center console storage compartm
 
 ## Reference
 
-  - [USB mount cable](https://www.amazon.com/gp/product/B0773GKM2C/) bought on Amazon "LDKCOK USB 3.0 Mount Cable –USB Extension Flush, Dash, Panel Mount Cable, for Car, Boat, Motorcycle and More (6ft/2m)"
-  - Ford part number that is substitute for: []()
+- [USB mount cable](https://www.amazon.com/gp/product/B0773GKM2C/) bought on Amazon "LDKCOK USB 3.0 Mount Cable –USB Extension Flush, Dash, Panel Mount Cable, for Car, Boat, Motorcycle and More (6ft/2m)"
+- Ford part number that it's substitute for: "Ford Mustang Center Console Secondary Outlet Cover" [4R33-6304752-AB](https://www.google.com/search?q=4R33-6304752-AB&oq=4R33-6304752-AB)
 
 ## Files
 
