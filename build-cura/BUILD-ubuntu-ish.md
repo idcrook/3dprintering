@@ -1,6 +1,23 @@
 building from source
 ====================
 
+Runtime Error messages
+----------------------
+
+```
+$ cura-lulzbot
+/usr/share/cura-lulzbot/cura-lulzbot: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.28' not found (required by /usr/share/cura-lulzbot/cura-lulzbot)
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	LinuxMint
+Description:	Linux Mint 19.2 Tina
+Release:	19.2
+Codename:	tina
+```
+
+build instructions
+------------------
+
 found here: https://forum.lulzbot.com/viewtopic.php?t=9644#p47293
 
 ```
