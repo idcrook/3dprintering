@@ -17,9 +17,10 @@ module ridge_outline () {
 
   L_vert_to_horiz_start = 6.5; // measured is 7.0
 
-  ridge_center_radius = (center_diameter - 1.0) / 2;
+  ridge_center_radius = (center_diameter - 0.6) / 2;
 
-  rotate([0, 0, 180])
+  rotate([0, 0, -90])
+    translate([-half_ridge_width, -half_ridge_width])
   union () {
     square([ridge_width, L_vert_to_horiz_start + half_ridge_width]);
     translate([half_ridge_width, L_vert_to_horiz_start + half_ridge_width]) {
@@ -38,7 +39,7 @@ module ridge_outline () {
   }
 }
 
-module generate_ridge (height = 2.0 + 1.0) {
+module generate_ridge (height = 2.0 + 1.5) {
 
   linear_extrude(h = height) {
     ridge_outline();
@@ -53,7 +54,7 @@ if (!true) {
  } else {
 
   h = 3;
-  translate ([-3/2 + 1, -3/2 + 1, 0]) cube([10 + 3, 10 + 3, h]);
-  translate ([10, 10, h-e]) { generate_ridge(height = 2.0 + 1.0); }
+  translate ([0, 0, 0]) cube([10 + 3, 10 + 3, h]);
+  translate ([4, 9, h-e]) { generate_ridge(height = 2.0 + 1.5); }
 
  }
