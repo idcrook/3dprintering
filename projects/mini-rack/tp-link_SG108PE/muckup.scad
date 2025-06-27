@@ -24,7 +24,9 @@ module single_look() {
     *translate([-79,-87, 9]) %sg108_enclosure();
   }
 
-  //translate([-79,-87, 9]) %sg108_enclosure();
+  translate([-79,-87, 9]) %sg108_enclosure();
+  translate([-26, 24, 5+e]) %power_brick();
+
 }
 
 module modified_import () {
@@ -37,6 +39,7 @@ module modified_import () {
   }
 
 
+  // position updated half crosses
   x1 = -55.0;
   x2 = x1 + distance_between_slots;
 
@@ -72,6 +75,11 @@ module sg108_enclosure () {
     }
   }
 
+}
+
+module power_brick() {
+
+  cube([104, 57, 37]);
 }
 
 module mount_post () {
@@ -148,4 +156,6 @@ if (show_assembly) {
   single_look();
   //generate_ridge();
   //sg108_enclosure();
+    single_look();
+
 }

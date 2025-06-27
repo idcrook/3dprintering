@@ -1,5 +1,10 @@
 # TP-LINK SG108PE V2 (ver. 2.6)
 
+![mockup](muckup.png)
+
+## Dimensions
+
+
 https://www.tp-link.com/us/support/download/tl-sg108pe/v2/
 
 
