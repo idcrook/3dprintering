@@ -5,7 +5,7 @@ slot_width = 4.0;
 L_leg_length = 11; // possibly 12
 extent_length = 14.0;
 
-center_diameter = 9.0;
+center_diameter = 8.0;
 
 
 module ridge_outline () {
@@ -49,7 +49,7 @@ module generate_ridge (height = 2.0 + 1.0) {
 
 if (!true) {
   //ridge_outline();
-  generate_ridge(height = 2.0 + 1.5 + 0.5);
+  generate_ridge(height = 2.0 + 1.0);
  } else {
 
   h = 3;
