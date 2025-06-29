@@ -10,14 +10,18 @@ The "Mini Purple Monster"
 
 -	1U - **Included with T1**: SBC shelf - Raspberry Pi + USB external 2.5-inch SSD
 
--	1U - **3D Print** For TP-Link Network Switch (TL-SG108PE)
+-	1U - **3D Print** For TP-Link Network Switch (TL-SG108PE V2)
 
-	-	Use the 1U shelf from: [10 inch 1U Server Organization by Eccomi](https://www.printables.com/model/1229438-10-inch-1u-server-organization)
-	-	For some reason, Simplify3D cannot directly import some of the .3mf files I download from Printables.com. I import into Bambu Studio and then export as a generic .3mf and it then successfully imports into Simplify3D.
+	-	Remixed my own: [10-inch rack mount for PoE switch TL-SG108PE V2 with adjacent PSU by idcrook | Download free STL model | Printables.com](https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi)
 
--	1U - **3D Print** Have multiple Raspberry Pis, some with PoE HAT
+-	1U - **3D Print** Have multiple Raspberry Pis with PoE HAT
 
 	-	Have a customized 1U for 3X Pi 4/Pi 5 [design][link_tbd1]
+        - sled from [Raspberry Pi 4/5 1U rack-mount bracket by russross - Thingiverse](https://www.thingiverse.com/thing:4125055)
+
+-	1U - **3D Print** For YuanLey 8 Port 2.5G Ethernet Switch with 10G SFP (YS25-0801)
+
+	-	Have a customized 1
 
 -	1U - **3rd Party**: [Enmane 12-Port CAT6 Keystone Patch Panel for Rackmount 1U10inch Panel with Smart Cable Mangement](https://www.amazon.com/dp/B0D5TZFDN1)
 
@@ -25,4 +29,4 @@ The "Mini Purple Monster"
 
 ---
 
-[link_tbd1]:
+[link_tbd1]: psychic-winner/10inch_rackmount_1U_raspis
