@@ -12,8 +12,8 @@ Exterior
 
 -	`197.1 X 72.9 X 29.0 mm`  (`7.76 X 2.87 X 1.14 inch`)
 -	distance between mounting holes: `130 mm`
-	-	measured ` mm` from front
-	-	measured ` mm` from rear
+	-	measured `43.4 mm` from front
+	-	measured `29.5 mm` from rear
 
 
 ![dimensions](wall-mount.png)

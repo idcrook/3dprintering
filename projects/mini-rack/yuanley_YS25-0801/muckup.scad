@@ -108,6 +108,16 @@ module mount_post () {
 }
 
 bar_19inch_width = 19 * 25.4;
+center_to_center_19inch = 18.3125 * 25.4;
+interior_rack_spacing_19inch = 17.75 * 25.4;
+
+bar_10inch_width = 10 * 25.4;
+center_to_center_10inch = 9.3125 * 25.4;
+interior_rack_spacing_10inch = 8.75 * 25.4;
+
+// amount to shorten each ear (half on either side)
+ear_difference_19inch_to_10inch = ((19 - 10) * 25.4)/2;
+
 
 frame_width = 67.0;
 fudge = 0.2;
@@ -131,7 +141,17 @@ module middle () {
 
 }
 module bar_19inch() {
-  cube([bar_19inch_width, 5, 10]);
+  y_depth = 5;
+  z_height = 10;
+
+  difference() {
+    cube([bar_19inch_width, y_depth, z_height]);
+    translate([(bar_19inch_width - center_to_center_19inch)/2, -e, z_height/2]) {
+      rotate([-90,0,0]) cylinder(r = 6/2, h = y_depth + 20);
+      translate([center_to_center_19inch,0,0])
+      rotate([-90,0,0]) cylinder(r = 6/2, h = y_depth + 2*e);
+    }
+  }
 }
 
 module left_ear () {
@@ -166,7 +186,7 @@ module assembly_original() {
   translate([ear_y + middle_y + 2*fudge, 0, 0])
     color("grey") right_ear();
 
-  translate([-5/2,0,50]) bar_19inch();
+  translate([-2, -6, 33-1.5]) % color("red", alpha= 0.60) bar_19inch();
 
 }
 
