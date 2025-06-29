@@ -2,6 +2,8 @@
 
 ![mockup](muckup.png)
 
+
+
 ## Dimensions
 
 
@@ -31,3 +33,9 @@ Exterior
 
 swappable directly with Unmanaged non-PoE SG108 v1.1 (c. 2013)
 https://www.newegg.com/tp-link-tl-sg108-8-x-rj45/p/N82E16833704173?
+
+
+# Published
+
+- [10-inch rack mount for PoE switch TL-SG108PE V2 with adjacent PSU by idcrook | Download free STL model | Printables.com](https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi)
+  - <https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi>
