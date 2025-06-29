@@ -161,6 +161,8 @@ module assembly_original() {
   translate([0, 0, 0]) color("grey") left_ear();
   translate([ear_y + 1*fudge, 0, ear_z - middle_height])
     color("grey") middle();
+  translate([ear_y + 1*fudge, 0, 0])
+    color("darkblue") ys25_0801();
   translate([ear_y + middle_y + 2*fudge, 0, 0])
     color("grey") right_ear();
 
