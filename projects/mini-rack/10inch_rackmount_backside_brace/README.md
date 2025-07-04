@@ -1,6 +1,6 @@
-# 10-inch rackmount back-side cantilever supports
+# 10-inch rackmount back-side cantilevered shelf supports
 
-I printed some large 10-inch rackmount shelves in PLA. Decided to adapt these brackets to help with potential cantilever droops on one of the network switches with PSU power brick included on the 10-inch shelf.
+I print some largish 10-inch rackmount shelves in PLA. Adapted these brackets to help with potential cantilever droops for one of the network switches with PSU power brick included on the 10-inch shelf, but should be easy to adapt to others.
 
 ![mockup](muckup.png)
 
