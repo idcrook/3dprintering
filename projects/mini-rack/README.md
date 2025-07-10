@@ -8,7 +8,7 @@ The "Mini Purple Monster"
 
 ### Racks / Shelfs / Panels
 
--	1U - **Included with T1**: SBC shelf - Raspberry Pi + USB external 2.5-inch SSD
+-	1U - **Included with T1**: SBC shelf - Raspberry Pi 5  X 2
 
 -	1U - **3D Print** For TP-Link Network Switch (TL-SG108PE V2)
 

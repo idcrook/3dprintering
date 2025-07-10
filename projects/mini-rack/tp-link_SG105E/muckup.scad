@@ -25,6 +25,7 @@ module single_look() {
     //translate([0.5, 0, rack_switch_elevation + fudge]) %sg105_enclosure();
   }
 
+
   translate([0.5, 0, rack_switch_elevation]) %sg105_enclosure();
 
 }
@@ -75,6 +76,9 @@ module modified_import () {
   translate([x1 + 0.5, y, z]) mount_post();
   translate([x2 + 0.5, y, z]) mount_post();
 
+  // shrink bores slightly on pi mount posts
+  translate([-74.5, 25.5, 11+e]) pi_mount_bores();
+
 }
 
 
@@ -116,10 +120,39 @@ module mount_post () {
   }
 }
 
+
+module pi_mount_bore (height = 5.5) {
+
+  linear_extrude(height = height, center = false, convexity = 10, twist = 0, slices = 20, scale = 1.0) {
+    difference () {
+      circle(r = 6/2, $fn = 24);
+      circle(r = 2.8/2, $fn = 50);
+    }
+  }
+}
+
+module pi_mount_bores (height = 5.5) {
+
+  x_spacing = 49;
+  y_spacing = 58;
+
+  translate(v = [0,0,0]) pi_mount_bore();
+  translate(v = [x_spacing, 0, 0]) pi_mount_bore();
+  translate(v = [0, y_spacing, 0]) pi_mount_bore();
+  translate(v = [x_spacing, y_spacing, 0]) pi_mount_bore();
+
+}
+
+module tray_sled () {
+ import ("raspberry-pi-rack-tray.stl");
+}
+
 module assembly() {
   import ("10-inch-rack-mount-for-raspberry-pi-4-and-tl-sg105e.stl");
   translate([0.5, 0, rack_switch_elevation]) color("darkblue") %sg105_enclosure();
 
+  // shrink bores slightly on pi mount posts
+  translate([-74.5, 25.5, 11+e]) %pi_mount_bores();
 
 }
 
