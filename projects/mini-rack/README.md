@@ -36,7 +36,6 @@
 	-	[10-inch 1U rackmount for YuanLey YS25-0801 8 Port 2.5G + 10G SFP switch rack mount by idcrook | Download free STL model | Printables.com](https://www.printables.com/model/1341992-10-inch-1u-rackmount-for-yuanley-ys25-0801-8-port)
 	-	customized from 19-inch rack version: [YuanLey 8 Port 2.5G switch rack mount by Patrik | Download free STL model | Printables.com](https://www.printables.com/model/855167-yuanley-8-port-25g-switch-rack-mount)
 
--	1U -DeskPi RackMate Accessories [SBC Shelf 1U Rack](https://www.amazon.com/dp/B0D5XMM7HL) SBC shelf - Jetson Nano 2X
 
 ### Individual Model mockups
 
@@ -62,3 +61,5 @@
 ## See Also
 
 - [Project MINI RACK | Miniature rack builds, for portable or compact Homelabs.](https://mini-rack.jeffgeerling.com/#3d-printable-systems)
+
+![Dimensions for rack mounts](rack_dimensions_spacing.png)
