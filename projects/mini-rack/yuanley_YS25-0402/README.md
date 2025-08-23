@@ -1,4 +1,4 @@
-# YuanLey YS25-0402 - 4-port 2.5G unmanaged ethernet switch with 2 X 10G SFP+
+# 10-inch 1U rack mount shelf for YuanLey YS25-0402 - 4 Port 2.5 GbE plus 2 Port 10G SFP+ ethernet switch
 
 `YS25-0402 10-inch rack shelf` [[STL](YS25_0402_10inch_rack.stl)]
 
@@ -35,3 +35,5 @@ Side enclosure screw positions
 [Amazon.com: 6 Port 2.5G Unmanaged Ethernet Switch, 4 x 2.5G Base-T Ports, 2 x 10G SFP, Compatible with 100/1000/2500Mbps, VLAN, Fanless, Desktop/Wall Mount YuanLey 2.5Gbe Network Switch for Wireless AP, NAS, PC : Electronics](https://www.amazon.com/Port-Umanaged-SFP-Compatible-YuanLey/dp/B0C64N2QN7?th=1)
 
 # Published
+
+- Printables.com: [10-inch 1U rack mount shelf for YuanLey YS25-0402 (4 Port 2.5 GbE plus 2 Port 10G SFP+ ethernet switch)](https://www.printables.com/model/1392480-10-inch-1u-rack-mount-shelf-for-yuanley-ys25-0402)
