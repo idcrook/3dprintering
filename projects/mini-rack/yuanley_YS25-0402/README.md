@@ -6,6 +6,8 @@ Found <https://github.com/wildegnux/universal-rack-shelf> in search for 10-inch 
 
 Created **YS25-0402** parameter set in my fork [idcrook/universal-rack-shelf rack_shelf.json](https://github.com/idcrook/universal-rack-shelf/blob/88303ee16b30d2e1e216f8eee74f86ba26137206/rack_shelf.json#L86C10-L86C20)
 
+![make](make.jpeg)
+
 ![mockup](in-place-sizing.png)
 
 ![rack view](assembly.png)
