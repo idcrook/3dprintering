@@ -1,7 +1,5 @@
 # YuanLey YS25-0402 - 4-port 2.5G unmanaged ethernet switch with 2 X 10G SFP+
 
-<script src="https://embed.github.com/view/3d/idcrook/3dprintering>/main/projects/mini-rack/yuanley_YS25-0402/YS25_0402_10inch_rack.stl"></script>
-
 `YS25-0402 10-inch rack shelf` [[STL](YS25_0402_10inch_rack.stl)]
 
 Found <https://github.com/wildegnux/universal-rack-shelf> in search for 10-inch rack mount OpenSCAD library, which was linked to from [3D printable 10'' rack shelves #14](https://github.com/geerlingguy/mini-rack/issues/14) in Jeff Geerling's `mini-rack` repo.
