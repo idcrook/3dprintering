@@ -27,3 +27,5 @@ Exterior
 
 
 # Shared
+
+- Printables: [10" inch 1U rack mount for side-by-side Raspberry Pi 4 and TL-SG105E Ver. 3](https://www.printables.com/model/1351523-10-inch-1u-rack-mount-for-side-by-side-raspberry-p)
