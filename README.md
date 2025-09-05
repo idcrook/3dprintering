@@ -2,6 +2,7 @@
 
 Collection of models for 3D printed designs
 
+SEE ALSO: [psychic-winner](https://github.com/idcrook/psychic-winner) [GitHub] - my strangely named collection of additional 3D print models over the years.
 
 ## Projects
 
