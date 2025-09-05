@@ -24,5 +24,7 @@ Started with FreeCAD document `Rack mount holder.fcstd` from [Simple 1U rack mou
 
 # Related / Published
 
-- [10-inch rack mount for PoE switch TL-SG108PE V2 with adjacent PSU by idcrook | Download free STL model | Printables.com](https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi)
-  - <https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi>
+
+- [10-inch rackmount back-side cantilevered shelf supports by idcrook](https://www.printables.com/model/1345555-10-inch-rackmount-back-side-cantilevered-shelf-sup)
+
+- [10-inch rack mount for PoE switch TL-SG108PE V2 with adjacent PSU by idcrook](https://www.printables.com/model/1341088-10-inch-rack-mount-for-poe-switch-tl-sg108pe-v2-wi)
