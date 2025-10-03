@@ -71,10 +71,10 @@ module sks8310 () {
   }
 }
 
-module mount_screw_hole (diameter = 3, height = 10, keepout = true) {
+module mount_screw_hole (diameter = 3.2, height = 10, keepout = true) {
   $fn = 28;
   r1 = diameter/2;
-  r2 = r1 + 1.75;
+  r2 = r1 + 1.75 - 0.1;
   h2 = 0.66;
   r3 = (r1+r2)/2;
   h3 = h2/2;
