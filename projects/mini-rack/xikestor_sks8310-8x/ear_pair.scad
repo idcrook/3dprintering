@@ -1,7 +1,7 @@
 
 include <../../../libraries/BOSL2/std.scad>
 
-show_assembly = !true;
+show_assembly = true;
 
 e = 1/128;
 
@@ -129,8 +129,6 @@ module left_ear_10inch() {
   back_x = mount_back_screw__from_front;
   back_y = mount_back_screw__from_bottom + delta_y;
 
-
-
   // ear face
   difference() {
     union() {
@@ -151,8 +149,6 @@ module left_ear_10inch() {
 
     translate([rail2_x, 0 , rail2_y])
       rail_hole();
-
-
   }
 
   // ear along mount (bracket into switch)
@@ -180,11 +176,14 @@ module left_ear_10inch() {
 
     translate([back_x, 0 , back_y])
       mount_screw_hole();
-
   }
+}
 
 
-
+module right_ear_10inch() {
+  face_size = ear_face_length + ear_mount_thickness;
+  translate([face_size,0,0])   mirror([1,0,0])
+    left_ear_10inch();
 }
 
 
@@ -247,14 +246,20 @@ module customized_universal () {
 
 module assembly_10inch() {
 
-  ys_y_offset = (44.45 - height) / 2;
-  ys_x_offset = (bar_10inch_width - width) / 2;
+  sks_y_offset = (rackmount_height - height) / 2;
+  sks_x_offset = (bar_10inch_width - width) / 2;
 
-  translate([0, 0, 0]) color("grey") customized_universal();
+  right_ear_translate =  ear_face_length + ear_mount_thickness + width;
 
-  %translate([ys_x_offset, ys_y_offset, 0])
+  translate([0, rackmount_height, 0]) rotate([90,0,0])
+    color("grey") left_ear_10inch();
+
+  %translate([sks_x_offset, sks_y_offset, 0])
      color("darkblue", alpha=0.8)
      sks8310();
+
+  translate([right_ear_translate, rackmount_height, 0]) rotate([90,0,0])
+    color("grey") right_ear_10inch();
 
    //translate([-2, -6, 33-1.5])
   translate([0.0, 1.5, 0])
@@ -272,7 +277,10 @@ if (show_assembly) {
   //single_look();
   //  sks8310();
   // rotate([90, 0, 0])
-  left_ear_10inch();
+  //left_ear_10inch();
+
+  // rotate([90, 0, 0])
+  right_ear_10inch();
 
   //mount_screw_hole();
 }
