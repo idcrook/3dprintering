@@ -1,11 +1,10 @@
 
-use <mounting.scad>
+include <../../../libraries/BOSL2/std.scad>
 
 show_assembly = !true;
 
-e = 1/64;
+e = 1/128;
 
-//universal_customized_stl = "YS25_0802_10inch_rack.stl";
 universal_customized_stl = "universal_10inch_rack-xikestor8310.stl";
 
 width = 207;
@@ -21,7 +20,7 @@ mount_front_screws__spacing = 19.0;
 mount_front_screws__hole1_height = (1/2) * (rackmount_height - height) + mount_front_screws__from_bottom;
 mount_front_screws__hole2_height = mount_front_screws__hole1_height + mount_front_screws__spacing;
 
-mount_back_screw__from_front = 20.0;
+mount_back_screw__from_front = 21.5;
 mount_back_screw__from_bottom = height / 2;
 mount_back_screw__height = (1/2) * (rackmount_height - height) + mount_back_screw__from_bottom;
 
@@ -32,7 +31,7 @@ mount_height__from_1U_bottom = (1/2)*(rackmount_height - mount_height);
 mount_length = 30.0 + 5.0;
 
 ear_face_thickness = 3.5;
-ear_mount_thickness = 4.0;
+ear_mount_thickness = 4.5;
 
 /* [Hidden] */
 
@@ -127,8 +126,18 @@ module left_ear_10inch() {
 
   // ear face
   difference() {
+    union() {
+      // main face
+      cube([face_width, face_thickness, face_height], center = false);
 
-    cube([face_width, face_thickness, face_height], center = false);
+      // taper
+      translate([face_width + (1/2)*bracket_thickness - e,
+                 face_thickness,
+                 (1/2)*face_height])
+        rotate([0,90,-90])
+        linear_extrude(height=face_thickness)
+        trapezoid(h=bracket_thickness, w1=face_height, w2=mount_height);
+    }
     // punch holes
     translate([rail1_x, 0 , rail1_y])
       rail_hole();
@@ -163,19 +172,6 @@ module left_ear_10inch() {
 
 }
 
-
-module mount_post () {
-
-  support_height=5;
-  support_leg = 16;
-  union() {
-
-    translate([2, -2, -(support_height/2)+e])
-      rotate([0,0,0])
-      cube([support_leg, support_leg, support_height], center = true);
-    generate_ridge() {}
-  }
-}
 
 bar_19inch_width = 19 * 25.4;
 center_to_center_19inch = 18.3125 * 25.4;
