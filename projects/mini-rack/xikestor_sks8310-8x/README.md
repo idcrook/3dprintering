@@ -1,5 +1,9 @@
 # Xikestor SKS8310-8X - 8-port SFP+ 10G Managed ethernet switch
 
+The *Xikestor SKS8310-8X* switch included metal ears for 19-inch 1U rackmount.  I needed to place in my 10-inch rackmount setup, so I designed these.
+
+## Installed
+
 ![parts](assembly.png)
 
 ![mockup](in-place-sizing.png)
