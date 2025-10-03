@@ -71,18 +71,25 @@ module sks8310 () {
   }
 }
 
-module mount_screw_hole (diameter = 3, height = 10) {
-  $fn = 20;
+module mount_screw_hole (diameter = 3, height = 10, keepout = true) {
+  $fn = 28;
   r1 = diameter/2;
   r2 = r1 + 1.75;
   h2 = 0.66;
   r3 = (r1+r2)/2;
   h3 = h2/2;
+
+  keepout_height = 8;
   translate([0,-e,0]) rotate([-90, 0, 0]) {
+
     cylinder(h = height, r = r1, center = false);
     cylinder(h = h2, r = r2, center = false);
     translate([0,0, h2-e])
       cylinder(h = h3, r = r3, center = false);
+    if (keepout) {
+      translate([0,0,-keepout_height+e])
+        cylinder(h = keepout_height, r = r2, center = false);
+    }
   }
 
 }
@@ -153,9 +160,17 @@ module left_ear_10inch() {
   translate([start_mount - e, 0, mount_height__from_1U_bottom]) rotate([0,0,90])
   mirror([0, 1, 0])
   difference() {
+    union() {
+      // main bracket
+      cube([bracket_length, bracket_thickness, bracket_height], center = false);
 
-    cube([bracket_length, bracket_thickness, bracket_height], center = false);
-
+      // angle along corner edge
+      translate([0, 0, 0])
+        rotate ([0, 0, -45])
+                 cube([face_thickness * 1.43,
+                       face_thickness * 1.43,
+                       bracket_height], center = false);
+    }
     // punch holes
     translate([front1_x, 0 , front1_y])
       mount_screw_hole();
