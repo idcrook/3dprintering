@@ -4,7 +4,7 @@ The *Xikestor SKS8310-8X* switch included metal ears for 19-inch 1U rackmount.  
 
 ## Installed
 
-![parts](assembly.png)
+![parts](assembly.jpg)
 
 ![mockup](in-place-sizing.png)
 
@@ -32,4 +32,4 @@ Exterior
 
 # Published
 
--
+- [Xikestor SKS8310-8X rackmount 1U Ears for 10-inch rack by idcrook | Download free STL model | Printables.com](https://www.printables.com/model/1434515-xikestor-sks8310-8x-rackmount-1u-ears-for-10-inch)
