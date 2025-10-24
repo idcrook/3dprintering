@@ -1,16 +1,14 @@
-# ObiHai Obi202 - VoIP Phone adapter with 2 lines
+# 10-inch 1U rackmount Obihai Obi202 - VoIP Phone adapter with 2 lines
 
 I wanted to place in my 10-inch rackmount setup, so I used universal rack generator.
 
+
 Created **obihai_obi202** parameter set in my fork: [universal-rack-shelf/rack_shelf.json](https://github.com/idcrook/universal-rack-shelf/blob/9f94fab58d525716cfaa5c3257eedbf158940fec/rack_shelf.json#L215)
 
-![make installed](10inch-shelf-in-rack.jpeg)
+![10-inch rackmount shelf](shelf.png)
 
-![make](make.jpeg)
+![make installed](10inch-shelf-in-rack.png)
 
-![mockup](in-place-sizing.png)
-
-![rack view](assembly.png)
 
 
 ##  Dimensions
@@ -22,4 +20,4 @@ Exterior
 
 # Published
 
-- Printables.com:
+- Printables.com: <https://www.printables.com/model/1457294-10-inch-1u-rackmount-obihai-obi202>
