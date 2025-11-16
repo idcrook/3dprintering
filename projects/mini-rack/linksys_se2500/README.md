@@ -12,10 +12,7 @@ Created **obihai_obi202** parameter set in my fork: [universal-rack-shelf/rack_s
 
 ![make installed](10inch-shelf-in-rack.png)
 
-
-
 ##  Dimensions
-
 
 Exterior
 
