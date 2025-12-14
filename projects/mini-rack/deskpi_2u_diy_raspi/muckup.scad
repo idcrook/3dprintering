@@ -1,5 +1,4 @@
 
-
 show_assembly = true;
 
 e = 1/128;
@@ -31,9 +30,10 @@ rpi_height = 27.0; // allow for some height on dupont connectors in GPIO header
 
 module single_look() {
   intersection() {
-    //modified_import_pi5();
-    //modified_import_pi4();
-    modified_import_pi();
+    modified_import_pi5();
+    //modified_import_pi4(use_pi4_switch_model = false);
+    //modified_import_pi4(use_pi4_switch_model = true);
+    //modified_import_pi();
   }
 }
 
