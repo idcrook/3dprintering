@@ -84,14 +84,19 @@ module solar_frame() {
 
 }
 
+module solar_frame_standard() {
+  translate ([(1/2) * (panel_w) + wall_t, (1/2) * (panel_l) + tab_w + wall_t, 0]) solar_frame();
+
+}
+
 module solar_battery_case () {
 
-  open = true;
+  open = false;
 
   z_add = open ? 3*12 : 2*12;
 
-  import ("solar_battery_case_1.3mf");
-  translate ([0, 2*88, z_add]) rotate([180, 0, 0]) import ("solar_battery_case_2.3mf");
+  %import ("solar_battery_case_1.3mf");
+  %translate ([0, 2*88, z_add]) rotate([180, 0, 0]) import ("solar_battery_case_2.3mf");
 
   translate ([charger_w + 45, 14.5, 13 + 1]) rotate ([0,180,0]) lipo_rider_pro(show_keepouts = true);
   //translate ([board_w + 45, board_l + 14.5, 13]) rotate ([0,0,180])lipo_rider_pro(show_keepouts = true);
@@ -105,7 +110,7 @@ if (DEVELOPING_enclosure_model)  {
   //translate ([0,0,0]) %lipo_rider_pro(show_keepouts = true);
 
   // Render the frame
-   translate ([0,0,40]) solar_frame();
+  translate([45, 14, 40]) solar_frame_standard();
 
-   rotate([0,0,180]) solar_battery_case();
+  rotate([0,0,0]) solar_battery_case();
 }
