@@ -21,7 +21,7 @@
 // * All measurements in millimeters * //
 
 // If true, model is instantiated by this file
-DEVELOPING_lipo_rider_pro_model = true;
+DEVELOPING_lipo_rider_pro_model = false;
 
 use <../libraries/MCAD/2Dshapes.scad>
 use <../libraries/dotSCAD/src/rounded_square.scad>
@@ -36,7 +36,7 @@ board_h_total = 10;   // Height of board (highest)
 board_pcb_h = 1.6;   // PCB thickness
 
 mount_hole_D = 3.1; // M3 machine screws
-mount_hole_inset = 2; //
+mount_hole_inset = 2.5; //
 mount_hole_spacing_x = board_w - 2 * (mount_hole_inset);
 mount_hole_spacing_y = board_l - 2 * (mount_hole_inset); //FIXME
 
@@ -112,19 +112,17 @@ module lipo_rider_pro (length = board_l, width = board_w, height = board_pcb_h, 
                mount_hole_inset + mount_hole_spacing_y, -e]) { mount_hole_punch(); }
     translate([mount_hole_inset + mount_hole_spacing_x,
                mount_hole_inset + mount_hole_spacing_y, -e]) { mount_hole_punch(); }
-
-
   }
 
-
   // TODO: model button and connector keepouts
-  translate([usb_mini_b_position__mid - (1/2) * usb_mini_b__keepout_x, -usb_mini_b__keepout_size, 0])
-    usb_mini_b__keepout();
-  translate([jst_2p0_panel_position__mid - (1/2) * jst_2p0_panel__keepout_x, -jst_2p0_panel__keepout_size, 0])
-    jst_2p0__keepout();
-  translate([jst_2p0_battery_position__mid - (1/2) * jst_2p0_battery__keepout_x, -jst_2p0_panel__keepout_size, 0])
-    jst_2p0__keepout();
-  //  translate([usb_mini_b_position__mid - (1/2) * usb_mini_b__keepout_x, -usb_mini_b__keepout_size, 0]) usb_mini_b__keepout();
+  if (show_keepouts) {
+    translate([usb_mini_b_position__mid - (1/2) * usb_mini_b__keepout_x, -usb_mini_b__keepout_size, 0])
+      usb_mini_b__keepout();
+    translate([jst_2p0_panel_position__mid - (1/2) * jst_2p0_panel__keepout_x, -jst_2p0_panel__keepout_size, 0])
+      jst_2p0__keepout();
+    translate([jst_2p0_battery_position__mid - (1/2) * jst_2p0_battery__keepout_x, -jst_2p0_panel__keepout_size, 0])
+      jst_2p0__keepout();
+  }
 }
 
 // $preview requires version 2019.05
