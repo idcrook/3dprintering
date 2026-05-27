@@ -28,6 +28,7 @@ use <../libraries/dotSCAD/src/rounded_square.scad>
 
 include <lipo_rider_pro.scad>
 include <solar_panel_3W.scad>
+include <liion_battery.scad>
 
 // very small number
 e = 1/128;
@@ -36,6 +37,12 @@ e = 1/128;
 charger_w = board_w;
 charger_l = board_l;
 charger_h = board_h_total;
+
+// battery
+battery_w = battery_width; // Width of the battery
+battery_l = battery_length; // Length of the battery
+battery_h = battery_thickness; // Height of the battery
+
 
 /* [Panel Dimensions] */
 panel_w = panel_width; // Width of the panel
@@ -103,6 +110,34 @@ module solar_battery_case () {
 
 }
 
+
+module solar_battery_case () {
+
+  open = false;
+
+  z_add = open ? 3*12 : 2*12;
+
+  %import ("solar_battery_case_1.3mf");
+  %translate ([0, 2*88, z_add]) rotate([180, 0, 0]) import ("solar_battery_case_2.3mf");
+
+  translate ([charger_w + 45, 14.5, 13 + 1]) rotate ([0,180,0]) lipo_rider_pro(show_keepouts = true);
+  //translate ([board_w + 45, board_l + 14.5, 13]) rotate ([0,0,180])lipo_rider_pro(show_keepouts = true);
+
+}
+
+module bee_lipo() {
+
+  size_y = 143;
+  translate ([0, size_y,0]) {
+    %rotate([90, 0, 0]) import ("BEE-LIPO-H30.STL");
+    %translate ([0, 0, 30]) rotate([90, 0, 0]) import ("BEE-LIPO-TOP.STL");
+
+  }
+  translate ([(size_y / 2) + 24.5, 46, 9]) rotate ([0,0,90]) lipo_rider_pro(show_keepouts = true);
+  translate ([battery_l + 35, 10, 2]) rotate([0,0,90]) battery_3mAh();
+}
+
+
 // $preview requires version 2019.05
 $fn = $preview ? 50 : 100;
 
@@ -110,7 +145,8 @@ if (DEVELOPING_enclosure_model)  {
   //translate ([0,0,0]) %lipo_rider_pro(show_keepouts = true);
 
   // Render the frame
-  translate([45, 14, 40]) solar_frame_standard();
+  %translate([5, 12, 40]) solar_frame_standard();
 
   rotate([0,0,0]) solar_battery_case();
+  *bee_lipo();
 }
